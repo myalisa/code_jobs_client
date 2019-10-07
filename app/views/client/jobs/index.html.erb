@@ -1,0 +1,9 @@
+<h1>Jobs Index</h1>
+
+<%= @jobs.each do |jobs| %>
+  <h2><a href="/client/jobs/<%= job["name"] %>"><%= job["location"] %></a></h2>
+  <h4>Location: <%= job["location"] %></h4>
+  <h5>Level: <%= job["level"] %></h5>
+  <br>
+  <br>
+<% end %>
