@@ -1,7 +1,7 @@
 var canvas = document.querySelector('canvas');
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = 2000;
+canvas.height = 2000;
 
 var c = canvas.getContext('2d');
 
@@ -76,13 +76,13 @@ c.fillStyle = 'rgba(60, 60, 255, 0.4)'
 c.fillRect(500, 230, 40, 40);
 c.fillStyle = 'rgba(160, 160, 255, 0.4)'
 c.fillRect(540, 70, 40, 40);
-c.fillStyle = 'rgba(180, 180, 255, 0.4)'
+c.fillStyle = 'rgba(180, 180, 255, 1)'
 c.fillRect(580, 70, 40, 40);
-c.fillStyle = 'rgba(200, 200, 255, 0.4)'
+c.fillStyle = 'rgba(200, 200, 255, 1)'
 c.fillRect(620, 110, 40, 40);
-c.fillStyle = 'rgba(180, 180, 255, 0.4)'
+c.fillStyle = 'rgba(180, 180, 255, 1)'
 c.fillRect(620, 90, 20, 20);
-c.fillStyle = 'rgba(210, 210, 225, 0.4)'
+c.fillStyle = 'rgba(210, 210, 225, 1)'
 c.fillRect(620, 150, 40, 40);
 c.fillStyle = 'rgba(180, 180, 255, 0.4)'
 c.fillRect(620, 190, 40, 40);
