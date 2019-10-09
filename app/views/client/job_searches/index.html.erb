@@ -1,0 +1,23 @@
+
+  <% @search_results["results"].each do |search_result| %>
+  <br>
+   <h2 class="card-subtitle mb-2 text-muted"><%= search_result["company"]["name"] %></h2>
+   <br>
+   
+   <h6 class="card-subtitle mb-2 text-muted"><%= search_result["short_name"] %></h6>
+   <br>
+
+   
+   <p class="card-text">Position Name: <%= search_result["name"] %></p>
+   <br>
+   <p class="card-text">Type: <%= search_result["type"] %></p>
+   
+
+   <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Apply for Job</button>
+  <br>
+
+  
+   
+
+  <% end %>
+

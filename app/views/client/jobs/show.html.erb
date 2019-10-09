@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-md-6">
+    <div class="jumbotron">
+      <h1 class="display-4"><%= @job["name"] %></h1>
+      <p class="lead">Company: <%= @job["company"] %></p>
+      <p class="lead">Level: <%= @job["formatted"]["level"] %></p>
+      <hr class="my-4">
+      <h3>Locations</h3>
+      <ul>
+        <% @job["formatted"]["locations"].each do |location| %>
+          <li><%= location %></li>
+        <% end %>
+      </ul>
+
+      <h3>Levels: </h3>
+      <ol>
+        <% @job["formatted"]["levels"].each do |level| %>
+          <li><%= direction %></li>
+        <% end %>
+      </ol>
+
+      <a class="btn btn-primary" href="/client/jobs/<%= @job['id'] %>/edit">Edit</a>
+      <%= form_tag "/client/jobs/#{ @job['id'] }", method: :delete do %>
+        <input class="btn btn-primary" type="submit" value="Destroy">
+      <% end %>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <img class="img-fluid" src="<%= @job["image_url"] %>">
+  </div>
+</div>
