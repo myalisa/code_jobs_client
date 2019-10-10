@@ -248,3 +248,4 @@ c.fillStyle = 'rgba(0, 245, 250, 0.4)'
 c.fillRect(720, 470, 20, 20);
 c.fillStyle = 'rgba(0, 255, 255, 0.4)'
 c.fillRect(700, 450, 20, 20);
+

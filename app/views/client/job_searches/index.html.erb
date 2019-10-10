@@ -10,8 +10,7 @@
    <p class="card-text">Type: <%= search_result["type"] %></p>
    <br>
   <ul>
-  <li>
-   <p class="card-subtitle mb-2 text-muted"><%= search_result["contents"].gsub("<strong>", "").gsub("</strong>", " ").gsub("<p>", " ").gsub("</p>", " ").gsub("<b>", " ").gsub("</b>", " ").gsub("<br>", " ").gsub("<ul>", " ").gsub("</ul>", " ").gsub("<li>", " ").gsub("</li>", " ").gsub("<br/>", " ").gsub("<a>", " ").gsub("</a>", " ") %></p>
+  <li class="card-subtitle mb-2 text-muted"><%= raw(search_result["contents"]) %>
   </li>
   </ul>
 
